@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+    long int a,b;
+    scanf("%ld %ld",&a,&b);
+    b=a+(a*0.6);
+    printf("Gross Salary is %ld",b);
+}

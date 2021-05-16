@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main()
+{
+    double k,i;
+    scanf("%lf %lf",&k,&i);
+    printf("Average consumption (km/lt) = %.2lf",k/i);
+}

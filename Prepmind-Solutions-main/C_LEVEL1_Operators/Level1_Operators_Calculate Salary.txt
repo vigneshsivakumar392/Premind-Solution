@@ -1,0 +1,7 @@
+#include<stdio.h>
+int main()
+{
+    long int eid,w,s;
+    scanf("%ld%ld%ld",&eid,&w,&s);
+    printf("Employee ID = %ld\nSalary per month = %ld",eid,w*s);
+}

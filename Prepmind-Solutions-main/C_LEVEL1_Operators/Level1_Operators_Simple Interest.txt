@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+    int p,n,r,si=0;
+    scanf("%d %d %d",&p,&n,&r);
+    si=(p*n*r)/100;
+    printf("%d",si);
+
+}

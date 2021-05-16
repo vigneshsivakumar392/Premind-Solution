@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+    double w1,w2,i1,i2,c;
+    scanf("%lf%lf%lf%lf",&w1,&i1,&w2,&i2);
+    c=((w1*i1)+(w2*i2))/(i1+i2);
+    printf("Average weight of the items : %.3lf",c);
+}

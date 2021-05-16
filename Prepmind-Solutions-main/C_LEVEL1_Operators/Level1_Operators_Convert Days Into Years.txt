@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    int n,d,y,w;
+    scanf("%d",&n);
+    y=n/365;
+    n=n-(365*y);
+    w=n/7;
+    d=n-(w*7);
+    printf("Number of Years : %d\nNumber of Weeks : %d\nNumber of Days : %d",y,w,d);
+}
