@@ -1,0 +1,61 @@
+#include<stdio.h>
+void remainingDays(int mm, int date,int yr)
+{
+    int a[12] = { 31,28,31,30,31,30,31,31,30,31,30,31}, i, total = 0;
+    int currentMonthDays = 0, totalRemainingDays = 0;
+    
+     if(yr%400==0 && yr%4==0 || yr%100!=0)
+    {
+        a[1] = 29;
+    }
+int forLoop(int i)
+{
+    for(i=mm;i<12;i++)
+            {
+                total += a[i];
+            }
+    return total;
+}
+    switch(mm)
+    {
+        case 1:
+        case 3:
+        case 5:
+        case 7:
+        case 8:
+        case 10:
+        case 12:
+        currentMonthDays = a[0] - date;
+        break;
+        case 2:
+        currentMonthDays = a[1] - date;
+        break;
+        case 4:
+        case 6:
+        case 9:
+        case 11:
+        currentMonthDays = a[3] - date;
+    }
+
+    switch(mm)
+    {
+        case 1 ... 12:
+          totalRemainingDays = forLoop(mm) + currentMonthDays;
+          break;
+    }
+
+printf("%d",totalRemainingDays);
+
+}
+int main()
+{
+    int date,currentMonth,year;
+    scanf("%d/%2d/%4d",&date,&currentMonth,&year);
+   if(((year%4!=0 && year%4!=0 || year%100==0) && date>28) || date<0)
+    {
+         printf("Invalid Date");
+    }
+    else {
+        remainingDays(currentMonth,date,year);
+    }
+}

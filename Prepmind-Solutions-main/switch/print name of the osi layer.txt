@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+int main()
+{
+    int c;
+
+    scanf("%d",&c);
+
+    if(c>=1 && c<=7)
+    {
+        if(c==1)
+        printf("Application Layer");
+        else if(c==2)
+        printf("Presentation Layer");
+        else if(c==3)
+        printf("Session Layer");
+        else if(c==4)
+        printf("Transport Layer");
+        else if(c==5)
+        printf("Network Layer");
+        else if(c==6)
+        printf("Data Link Layer");
+        else
+        printf("Physical Layer");
+    }
+    else
+    printf("Invalid Input");
+}

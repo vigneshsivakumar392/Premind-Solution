@@ -1,0 +1,68 @@
+#include<stdio.h>
+
+int main()
+{
+    char a;
+
+    scanf("%c",&a);
+
+    if(a=='H')
+    {
+       printf("Hydrogen");
+    }
+    else if(a=='B')
+    {
+      printf("Boron");
+    }
+    else if(a=='C')
+    {
+      printf("Carbon");
+    }
+    else if(a=='N')
+    {
+      printf("Nitrogen");
+    }
+    else if(a=='O')
+    {
+      printf("Oxygen");
+    }
+    else if(a=='F')
+    {
+       printf("Fluorine");
+    }
+    else if(a=='P')
+    {
+       printf("Phosphorus");
+    }
+    else if(a=='S')
+    {
+        printf("Sulphur");
+    }
+    else if(a=='K')
+    {
+       printf("Potassium");
+    }
+    else if(a=='V')
+    {
+      printf("Vanadium");
+    }
+    else if(a=='Y')
+    {
+      printf("Yttrium");
+    }
+    else if(a=='I')
+    {
+      printf("Iodine");
+    }
+    else if(a=='W')
+    {
+      printf("Tungsten");
+    }
+    else if(a=='U')
+    {
+      printf("Uranium");
+    }
+    
+    else
+    printf("No Match Found");
+}
