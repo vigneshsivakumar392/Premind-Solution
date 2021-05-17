@@ -1,0 +1,14 @@
+#include <stdio.h> 
+#include<ctype.h>
+int main()
+{
+    char c,a;
+    scanf("%c",&c);
+    if(islower(c)){
+        a=(toupper(c));
+    }
+    else{
+        a=(tolower(c));
+    }
+    printf("%c",a);
+}

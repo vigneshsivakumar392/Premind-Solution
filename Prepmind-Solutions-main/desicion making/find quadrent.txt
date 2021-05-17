@@ -1,0 +1,19 @@
+#include <stdio.h>
+void main()
+{
+	int co1,co2;
+
+	scanf("%d %d",&co1,&co2);
+
+	if( co1 > 0 && co2 > 0)
+	  printf("The coordinate point (%d,%d) lies in the First quadrant.",co1,co2);
+	else if( co1 < 0 && co2 > 0)
+	  printf("The coordinate point (%d,%d) lies in the Second quadrant.",co1,co2);
+	else if( co1 < 0 && co2 < 0)
+	  printf("The coordinate point (%d,%d) lies in the Third quadrant.",co1,co2);
+	else if(co1>0 && co2 <0)
+	  printf("The coordinate point (%d,%d) lies in the Fourth quadrant.",co1,co2);
+    
+	
+
+}
